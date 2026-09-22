@@ -1,0 +1,58 @@
+[
+  {
+    "pid": 101,
+    "process_name": "Chrome",
+    "state": "ready",
+    "io_bound": false,
+    "uid": 1001
+  },
+  {
+    "pid": 102,
+    "process_name": "Spotify",
+    "state": "running",
+    "io_bound": true,
+    "uid": 1002
+  },
+  {
+    "pid": 103,
+    "process_name": "VSCode",
+    "state": "blocked",
+    "io_bound": true,
+    "uid": 1001
+  },
+  {
+    "pid": 104,
+    "process_name": "Terminal",
+    "state": "ready",
+    "io_bound": true,
+    "uid": 1003
+  },
+  {
+    "pid": 105,
+    "process_name": "Firefox",
+    "state": "running",
+    "io_bound": false,
+    "uid": 1002
+  },
+  {
+    "pid": 106,
+    "process_name": "Discord",
+    "state": "blocked",
+    "io_bound": true,
+    "uid": 1004
+  },
+  {
+    "pid": 107,
+    "process_name": "Calculator",
+    "state": "ready",
+    "io_bound": false,
+    "uid": 1003
+  },
+  {
+    "pid": 108,
+    "process_name": "FileManager",
+    "state": "blocked",
+    "io_bound": false,
+    "uid": 1001
+  }
+]

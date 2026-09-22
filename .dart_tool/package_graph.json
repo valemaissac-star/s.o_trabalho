@@ -1,0 +1,27 @@
+{
+  "roots": [
+    "testes"
+  ],
+  "packages": [
+    {
+      "name": "testes",
+      "version": "0.0.0",
+      "dependencies": [
+        "path",
+        "tint"
+      ],
+      "devDependencies": []
+    },
+    {
+      "name": "tint",
+      "version": "2.0.1",
+      "dependencies": []
+    },
+    {
+      "name": "path",
+      "version": "1.9.1",
+      "dependencies": []
+    }
+  ],
+  "configVersion": 1
+}

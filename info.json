@@ -1,0 +1,37 @@
+[
+    {
+        "nome": "Windows 11",
+        "versao": "23H2",
+        "arquitetura": "x86-64"
+    },
+    {
+        "nome": "Ubuntu",
+        "versao": "24.04",
+        "arquitetura": "x86-64"
+    },
+    {
+        "nome": "Windows 10",
+        "versao": "22H2",
+        "arquitetura": "x86-64"
+    },
+    {
+        "nome": "Debian",
+        "versao": "12",
+        "arquitetura": "x86-64"
+    },
+    {
+        "nome": "macOS",
+        "versao": "15.6",
+        "arquitetura": "ARM64"
+    },
+    {
+        "nome": "Fedora Linux",
+        "versao": "42",
+        "arquitetura": "x86-64"
+    },
+    {
+        "nome": "Arch Linux",
+        "versao": "2026.09",
+        "arquitetura": "x86-64"
+    }
+]

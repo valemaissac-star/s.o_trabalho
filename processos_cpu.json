@@ -1,0 +1,50 @@
+[
+  {
+    "pid": 101,
+    "process_name": "chrome.exe",
+    "cpu_use": 45,
+    "mem_use": 1200
+  },
+  {
+    "pid": 102,
+    "process_name": "firefox.exe",
+    "cpu_use": 30,
+    "mem_use": 950
+  },
+  {
+    "pid": 103,
+    "process_name": "vscode.exe",
+    "cpu_use": 60,
+    "mem_use": 1800
+  },
+  {
+    "pid": 104,
+    "process_name": "discord.exe",
+    "cpu_use": 20,
+    "mem_use": 700
+  },
+  {
+    "pid": 105,
+    "process_name": "spotify.exe",
+    "cpu_use": 15,
+    "mem_use": 500
+  },
+  {
+    "pid": 106,
+    "process_name": "explorer.exe",
+    "cpu_use": 10,
+    "mem_use": 400
+  },
+  {
+    "pid": 107,
+    "process_name": "python.exe",
+    "cpu_use": 75,
+    "mem_use": 2200
+  },
+  {
+    "pid": 108,
+    "process_name": "java.exe",
+    "cpu_use": 55,
+    "mem_use": 1600
+  }
+]

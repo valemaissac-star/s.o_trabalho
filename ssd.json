@@ -1,0 +1,67 @@
+[
+  {
+    "arquivo": "receita.txt",
+    "usuario": "pedro",
+    "tamanho": 2
+  },
+  {
+    "arquivo": "bolo.jpg",
+    "usuario": "maria",
+    "tamanho": 3
+  },
+  {
+    "arquivo": "trabalho.doc",
+    "usuario": "pedro",
+    "tamanho": 4
+  },
+  {
+    "arquivo": "foto.png",
+    "usuario": "joao",
+    "tamanho": 5
+  },
+  {
+    "arquivo": "relatorio.pdf",
+    "usuario": "maria",
+    "tamanho": 6
+  },
+  {
+    "arquivo": "musicas.mp3",
+    "usuario": "carlos",
+    "tamanho": 8
+  },
+  {
+    "arquivo": "projeto.dart",
+    "usuario": "ana",
+    "tamanho": 4
+  },
+  {
+    "arquivo": "video.mp4",
+    "usuario": "carlos",
+    "tamanho": 15
+  },
+  {
+    "arquivo": "documento.pdf",
+    "usuario": "bruno",
+    "tamanho": 6
+  },
+  {
+    "arquivo": "apresentacao.pptx",
+    "usuario": "ana",
+    "tamanho": 10
+  },
+  {
+    "arquivo": "backup.zip",
+    "usuario": "bruno",
+    "tamanho": 20
+  },
+  {
+    "arquivo": "foto-ferias.jpg",
+    "usuario": "carlos",
+    "tamanho": 7
+  },
+  {
+    "arquivo": "planilha.xlsx",
+    "usuario": "ana",
+    "tamanho": 3
+  }
+]
