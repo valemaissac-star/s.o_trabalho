@@ -13,10 +13,10 @@ void main() async {
     }
   }
 
-  print("Digite o login:");
+  print("login novo:");
   String? login = stdin.readLineSync();
 
-  print("Digite a senha:");
+  print("senha nova:");
   String? senha = stdin.readLineSync();
 
   if (login == null || login.isEmpty || senha == null || senha.isEmpty) {
