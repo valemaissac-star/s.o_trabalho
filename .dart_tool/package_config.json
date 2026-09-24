@@ -2,6 +2,18 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "convertlib",
+      "rootUri": "file:///C:/Users/VALEMAIS%20PROMOTORA/AppData/Local/Pub/Cache/hosted/pub.dev/convertlib-3.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "hashlib",
+      "rootUri": "file:///C:/Users/VALEMAIS%20PROMOTORA/AppData/Local/Pub/Cache/hosted/pub.dev/hashlib-2.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "path",
       "rootUri": "file:///C:/Users/VALEMAIS%20PROMOTORA/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.1",
       "packageUri": "lib/",

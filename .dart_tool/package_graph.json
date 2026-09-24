@@ -7,6 +7,7 @@
       "name": "testes",
       "version": "0.0.0",
       "dependencies": [
+        "hashlib",
         "path",
         "tint"
       ],
@@ -20,6 +21,18 @@
     {
       "name": "path",
       "version": "1.9.1",
+      "dependencies": []
+    },
+    {
+      "name": "hashlib",
+      "version": "2.4.2",
+      "dependencies": [
+        "convertlib"
+      ]
+    },
+    {
+      "name": "convertlib",
+      "version": "3.6.1",
       "dependencies": []
     }
   ],
