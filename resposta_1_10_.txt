@@ -1,0 +1,153 @@
+1.	O que o código abaixo irá mostrar na tela? É necessário fazer “\n” ao final de cada print em Dart? 
+void main()
+                {
+                      int x = 10; 
+                     print( "Oi $x" );
+                     print( "Tchau" );
+}
+
+
+R  –
+
+Oi 10 
+Tchau 
+Exited.
+não precisa colocar o \n, pois os prints já fazem a quebra de linha, se estivessem tudo em um print  só, era necessário quebrar as linhas .
+
+
+2 - O que o código abaixo irá mostrar na tela? Que função converte um número em string?
+
+ void main() {
+              var a = [10, 20, 30];
+              print(a);
+              print(a.length); 
+             for (var x in a) {
+                       print( "item: " + x.toString() );
+             } 
+            for (var i = 0; i < a.length; i++) {
+                      print( "item: " + a[i].toString() ); 
+           }
+ }
+
+R – 
+[10, 20, 30]
+3
+item: 10
+item: 20
+item: 30
+item: 10
+item: 20
+item: 30
+toString() é a função que converte inteiros para strings 
+
+3 - O que o código abaixo irá mostrar na tela? A variável b será de que tipo? Por acaso, Dart consegue inferir o tipo da variável b como string? 
+
+void main() {
+          int x = 10; 
+         String a = x.toString();
+         var b = "$x"; print(a);
+         print(b);
+ }
+
+R – 
+
+10
+10
+B será do tipo string. Sim ela consegue inferir, atras do var, que declara ela  com string. Aqui dart descobriu sozinho que a variável é uma string 
+
+
+
+4 - O que o programa abaixo irá mostrar na tela? 
+
+void main() {
+           var lista = ["João", "Pedro"];
+           lista.add("Maria");
+           print( lista.first ); 
+           print( lista.last );
+           print( lista[1] );
+           print( lista[ lista.length-1 ] );
+ }
+
+R – 
+
+João 
+Maria 
+Pedro 
+Maria 
+Exited.
+
+
+5 -O que o programa abaixo faz? O que ele mostra ao final se a pessoa digitou nome “João” e idade “20”? 
+
+import 'dart:io';
+ void main() {
+        print("Qual é seu nome?");
+        var nome = stdin.readLineSync();
+       print("E sua idade?");
+       var idade = stdin.readLineSync();
+       print("$nome tem $idade anos de idade"); 
+}
+
+R – Esse programa usa a biblioteca 'dart:io' que pega a função stdin.readLineSync(), no qual espera ele interrompe o terminal pro usuário digitar algo, e pelo var ele vai interpretar sozinho se é uma string ou number.
+Qual é seu nome?
+João
+E sua idade?
+20
+JoÃ£o tem 20 anos de idade
+ 
+6 - O código abaixo gera 2 arquivos de texto a partir de strings. Qual o conteúdo desses arquivos? O que faz o comando jsonEncode? 
+
+import 'dart:io';
+import 'dart:convert';
+
+ void main() { 
+       var arq1 = File("arq1.txt"); 
+      arq1.writeAsStringSync("oi!\nfuncionou");
+      var ficha = { "nome": "João", "idade": 20 };
+      var s = jsonEncode(ficha);
+      var arq2 = File("arq2.json"); 
+      arq2.writeAsStringSync(s); 
+}
+ R – 
+Arq1.txt – 
+oi!
+Funcionou
+Arq2.json
+{
+    "nome": "João",
+    "idade": 20
+}
+Converte um algum conteúdo para o formato de arquivos json
+
+
+7 
+Considere um arquivo lista.txt onde cada linha segue exemplos como “João:20” ou “Maria:25”. No looping, linhas vazias ou somente com espaços são ignoradas. As demais, são divididas em partes usando o caractere “:” como divisor. A idade é convertida num int, e depois aumentada em 2. O que fazem os comandos trim( ) e isEmpty( ) numa string? E o que faz o comando split? Por fim, como se pode converter uma string em int e um int em string, em Dart?
+
+
+ import 'dart:io';
+ void main(){
+           var arq = File("lista.txt");
+           var linhas = arq.readAsLinesSync();
+          for (var linha in linhas) {
+                    linha = linha.trim();
+                   if (linha.isEmpty) continue;
+                   var partes = linha.split(':');
+                   var idade = int.parse( partes[1] ) + 2; print("Nome: " + partes[0]);                    print("Idade: " + idade.toString() );
+        }
+ }
+
+R –  Trim() remove os espaços no inicio e fim das linhas dos arquivos 
+isEmpty retorna booleano true ou false, verificando se uma string, lista ou mapa está vazia.
+Pra converter um int em string usa a função toString(), e string em int int.tryParse(variável)
+
+8 - Programa de Lista de Usuários: faça um código que abre um arquivo chamado contas.txt que tem uma lista de nomes de usuários (cada linha sendo um nome) e mostra os nomes em ordem alfabética. Dica: as listas em Dart têm um comando chamado sort( ). Pesquise sobre isso.
+
+R -  
+9 - Programa de Informações do SO via um arquivo JSON: o programa deve abrir um arquivo info.json que deve ter informações do SO numa estrutura desse tipo: { nome, versao, arquitetura } e então mostrar o nome do SO, a versão dele e a arquitetura do sistema (ex.: x86-64, ARM, etc). Você pode criar o arquivo info.json e então apenas implementar o programa que lê e mostra esses dados dele.
+
+R – 
+
+
+10. Programa de Log e Datas: faça um programa que leia um arquivo log.txt como no formato abaixo e mostre as datas na forma dia/mês/ano de cada acesso. 2026-02-21 15:30 pedro 2026-02-21 22:55 pedro 2026-02-22 14:33 maria
+
+R - 
